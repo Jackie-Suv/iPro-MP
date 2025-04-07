@@ -1,5 +1,5 @@
 # iPro-MP
-a BERT-based model for the prediction of multiple prokaryotic promoters
+**a BERT-based model for the prediction of multiple prokaryotic promoters**
 ![1 流程图](https://github.com/user-attachments/assets/dbb3d177-73d2-4e08-a87c-c65aab79e96c)
 # 1. Environment setup
 ```python
@@ -15,3 +15,36 @@ pip install -e .
 # install required packages
 python3 -m pip install -r requirements.txt
 ```
+# 2. Predict
+```python
+python iPro-MP_predict.py -i example.fasta -s species_ID
+
+species_ID = ["Acinetobacter baumannii ATCC 17978", # 1
+            "Bradyrhizobium japonicum USDA 110",   # 2
+            "Burkholderia cenocepacia J2315", # 3
+            "Campylobacter jejuni RM1221", # 4
+            "Campylobacter jejuni subsp. jejuni 81116", # 5
+            "Campylobacter jejuni subsp. jejuni 81-176", # 6
+            "Campylobacter jejuni subsp. jejuni NCTC 11168", # 7
+            "Corynebacterium diphtheriae NCTC 13129", # 8
+            "Corynebacterium glutamicum ATCC 13032", # 9
+            "Escherichia coli str K-12 substr. MG1655", # 10
+            "Haloferax volcanii DS2", # 11
+            "Helicobacter pylori strain 26695", # 12
+            "Nostoc sp. PCC7120",  # 13
+            "Paenibacillus riograndensis SBR5", # 14
+            "Pseudomonas putida KT2440",  # 15
+            "Shigella flexneri 5a str. M90T", # 16
+            "Sinorhizobium meliloti 1021", # 17
+            "Staphylococcus aureus subsp. aureus MW2", # 18
+            "Staphylococcus epidermidis ATCC 12228", # 19
+            "Synechococcus elongatus PCC 7942", # 20
+            "Thermococcus kodakarensis KOD1", # 21
+            "Xanthomonas campestris pv. campestrie B100",  # 22
+            "Bacillus subtilis subsp. subtilis str. 168"   #23
+            ]
+```
+
+# 3. Citation
+If you use iPro_MP in your work, please kindly cite our paper:
+Wei Su, Yuhe Yang, Yafei Zhao, Shishi Yuan, Xueqin Xie, Yuduo Hao, Hongqi Zhang, Dongxin Ye, Hao Lyu, Hao Lin. iPro-MP: a BERT-based model for the prediction of multiple prokaryotic promoters
