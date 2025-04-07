@@ -50,7 +50,7 @@ species_ID = ["Acinetobacter baumannii ATCC 17978", # 1
 The species_ID should be an integer between 1 and 23, corresponding to one of the 23 species in the above list.
 
 # -o outputfile
-This parameter allows the user to specify the output file name where the prediction results will be saved. 
+This parameter allows the user to specify the output file name where the prediction results will be saved in ./Predict_Results (.csv format). 
 ```
 
 # 3. Citation
