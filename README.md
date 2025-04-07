@@ -46,5 +46,10 @@ species_ID = ["Acinetobacter baumannii ATCC 17978", # 1
 ```
 
 # 3. Citation
+```
 If you use iPro_MP in your work, please kindly cite our paper:
 Wei Su, Yuhe Yang, Yafei Zhao, Shishi Yuan, Xueqin Xie, Yuduo Hao, Hongqi Zhang, Dongxin Ye, Hao Lyu, Hao Lin. iPro-MP: a BERT-based model for the prediction of multiple prokaryotic promoters
+If you have any question, please contact us (<820229344@qq.com>)
+```
+
+
