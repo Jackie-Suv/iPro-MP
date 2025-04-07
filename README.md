@@ -17,8 +17,12 @@ python3 -m pip install -r requirements.txt
 ```
 # 2. Predict
 ```python
-python iPro-MP_predict.py -i example.fasta -s species_ID
+python iPro-MP_predict.py -i example.fasta -s species_ID -o outputfile
 
+# -i example.fasta
+This parameter specifies the example.fasta file containing the DNA sequences that you want to predict. The file should be in FASTA format.
+
+# -s species_ID
 species_ID = ["Acinetobacter baumannii ATCC 17978", # 1
             "Bradyrhizobium japonicum USDA 110",   # 2
             "Burkholderia cenocepacia J2315", # 3
@@ -43,6 +47,10 @@ species_ID = ["Acinetobacter baumannii ATCC 17978", # 1
             "Xanthomonas campestris pv. campestrie B100",  # 22
             "Bacillus subtilis subsp. subtilis str. 168"   #23
             ]
+The species_ID should be an integer between 1 and 23, corresponding to one of the 23 species in the above list.
+
+# -o outputfile
+This parameter allows the user to specify the output file name where the prediction results will be saved. 
 ```
 
 # 3. Citation
