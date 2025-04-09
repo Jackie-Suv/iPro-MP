@@ -2,7 +2,7 @@
 **a BERT-based model for the prediction of multiple prokaryotic promoters**
 ![Figure1](https://github.com/user-attachments/assets/e8639c49-1822-472a-bf98-3f954216cba2)
 
-# 1. Model
+# 1. Model Downloading
 The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138
 
 # 2. Environment setup
@@ -20,7 +20,7 @@ pip install -e .
 python3 -m pip install -r requirements.txt
 ```
 # 3. Predict
-**After you have downloaded the model and set up the environment, run the following command for prediction.**
+**After downloading the model and setting up the environment, please run the following command for prediction.**
 ```python
 python iPro-MP_predict.py -i example.fasta -s species_ID -o outputfile
 
