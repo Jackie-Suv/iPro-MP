@@ -2,7 +2,10 @@
 **a BERT-based model for the prediction of multiple prokaryotic promoters**
 ![Figure1](https://github.com/user-attachments/assets/e8639c49-1822-472a-bf98-3f954216cba2)
 
-# 1. Environment setup
+# 1. Model
+The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138
+
+# 2. Environment setup
 ```python
 conda create -n dna python=3.8
 conda activate dna
@@ -16,7 +19,7 @@ pip install -e .
 # install required packages
 python3 -m pip install -r requirements.txt
 ```
-# 2. Predict
+# 3. Predict
 ```python
 python iPro-MP_predict.py -i example.fasta -s species_ID -o outputfile
 
@@ -54,7 +57,7 @@ The species_ID should be an integer between 1 and 23, corresponding to one of th
 This parameter allows the user to specify the output file name where the prediction results will be saved in ./Predict_Results (.csv format). 
 ```
 
-# 3. Citation
+# 4. Citation
 If you use iPro_MP in your work, please kindly cite our paper:
 Wei Su, Yuhe Yang, Yafei Zhao, Shishi Yuan, Xueqin Xie, Yuduo Hao, Hongqi Zhang, Dongxin Ye, Hao Lyu, Hao Lin. iPro-MP: a BERT-based model for the prediction of multiple prokaryotic promoters
 
