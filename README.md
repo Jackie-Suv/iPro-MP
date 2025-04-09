@@ -20,7 +20,7 @@ pip install -e .
 python3 -m pip install -r requirements.txt
 ```
 # 3. Predict
-*After you have downloaded the model and set up the environment, run the following command for prediction.*
+**After you have downloaded the model and set up the environment, run the following command for prediction.**
 ```python
 python iPro-MP_predict.py -i example.fasta -s species_ID -o outputfile
 
