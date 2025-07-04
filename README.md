@@ -2,8 +2,10 @@
 **a BERT-based model for the prediction of multiple prokaryotic promoters**
 ![Figure1](https://github.com/user-attachments/assets/e8639c49-1822-472a-bf98-3f954216cba2)
 
-# 1. File 
-
+# 1. File information
+- Benchmark Dataset : contains **Train** and **Test** data
+- iPro-MP_train.py : the source code for training models
+- iPro-MP_predict.py : the code for predicting promoters
 
 # 2. Model Downloading
 - The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138.
