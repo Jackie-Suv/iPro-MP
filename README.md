@@ -3,7 +3,8 @@
 ![Figure1](https://github.com/user-attachments/assets/e8639c49-1822-472a-bf98-3f954216cba2)
 
 # 1. Model Downloading
-The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138
+The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138.
+Please download the corresponding model based on the species to be predicted. The first number indicates the Species_ID.
 
 # 2. Environment setup
 ```python
