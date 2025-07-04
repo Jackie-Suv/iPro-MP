@@ -2,11 +2,14 @@
 **a BERT-based model for the prediction of multiple prokaryotic promoters**
 ![Figure1](https://github.com/user-attachments/assets/e8639c49-1822-472a-bf98-3f954216cba2)
 
-# 1. Model Downloading
-The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138.
-Please download the corresponding model based on the species to be predicted. The first number indicates the Species_ID.
+# 1. File 
 
-# 2. Environment setup
+
+# 2. Model Downloading
+- The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138.
+- Please download the corresponding model based on the species to be predicted. The first number indicates the Species_ID.
+
+# 3. Environment setup
 ```python
 conda create -n dna python=3.8
 conda activate dna
@@ -20,15 +23,15 @@ pip install -e .
 # install required packages
 python3 -m pip install -r requirements.txt
 ```
-# 3. Predict
+# 4. Predict
 **After downloading the model and setting up the environment, please run the following command for prediction.**
 ```python
 python iPro-MP_predict.py -i example.fasta -s species_ID -o outputfile
 
-# -i example.fasta
+## -i example.fasta
 This parameter specifies the example.fasta file containing the DNA sequences that you want to predict. The file should be in FASTA format.
 
-# -s species_ID
+## -s species_ID
 species_ID = ["Acinetobacter baumannii ATCC 17978", # 1
             "Bradyrhizobium japonicum USDA 110",   # 2
             "Burkholderia cenocepacia J2315", # 3
@@ -55,11 +58,14 @@ species_ID = ["Acinetobacter baumannii ATCC 17978", # 1
             ]
 The species_ID should be an integer between 1 and 23, corresponding to one of the 23 species in the above list.
 
-# -o outputfile
+## -o outputfile
 This parameter allows the user to specify the output file name where the prediction results will be saved in ./Predict_Results (.csv format). 
 ```
 
-# 4. Citation
+# 5. Training (obtional)
+- If you want to retrain or fine-tune the model, you can modify iPro-MP_train.py file.
+
+# 6. Citation
 If you use iPro_MP in your work, please kindly cite our paper:
 Wei Su, Yuhe Yang, Yafei Zhao, Shishi Yuan, Xueqin Xie, Yuduo Hao, Hongqi Zhang, Dongxin Ye, Hao Lyu, Hao Lin. iPro-MP: a BERT-based model for the prediction of multiple prokaryotic promoters
 
