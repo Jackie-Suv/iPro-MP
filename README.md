@@ -2,6 +2,20 @@
 **a BERT-based model for the prediction of multiple prokaryotic promoters**
 ![Figure1](https://github.com/user-attachments/assets/e8639c49-1822-472a-bf98-3f954216cba2)
 
+
+---
+
+## 🌟 Features
+
+- Supports **23 prokaryotic species**
+- Built on **DNABERT**, with customizable k-mer tokenization
+- Enables **cross-species prediction**, independent testing, and retraining
+- Includes **pre-trained models** and benchmarking datasets
+- Suitable for use in **synthetic biology** and **functional genomics**
+
+---
+
+## 🚀 Quick Start
 # 1. File information
 - Benchmark Dataset : contains **Train** and **Test** data
 - iPro-MP_train.py : the source code for training models
