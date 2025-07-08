@@ -16,16 +16,16 @@
 ---
 
 ## 🚀 Quick Start
-# 1. File information
+### 1. File information
 - Benchmark Dataset : contains **Train** and **Test** data
 - iPro-MP_train.py : the source code for training models
 - iPro-MP_predict.py : the code for predicting promoters
 
-# 2. Model Downloading
+### 2. Model Downloading
 - The fine-tuned models for 23 species were deposited to the Zenodo repository and are available at https://doi.org/10.5281/zenodo.15180138.
 - Please download the corresponding model based on the species to be predicted. The first number indicates the **Species_ID**.
 
-# 3. Environment setup
+### 3. Environment setup
 ```python
 conda create -n dna python=3.8
 conda activate dna
@@ -39,7 +39,7 @@ pip install -e .
 # install required packages
 python3 -m pip install -r requirements.txt
 ```
-# 4. Predict
+### 4. Predict
 **After downloading the model and setting up the environment, please run the following command for prediction.**
 ```python
 python iPro-MP_predict.py -i example.fasta -s species_ID -o outputfile
@@ -78,10 +78,10 @@ The species_ID should be an integer between 1 and 23, corresponding to one of th
 This parameter allows the user to specify the output file name where the prediction results will be saved in ./Predict_Results (.csv format). 
 ```
 
-# 5. Training (obtional)
+### 5. Training (obtional)
 - If you want to retrain or fine-tune the model, you can modify iPro-MP_train.py file.
 
-# 6. Citation
+### 6. Citation
 If you use iPro_MP in your work, please kindly cite our paper:
 Wei Su, Yuhe Yang, Yafei Zhao, Shishi Yuan, Xueqin Xie, Yuduo Hao, Hongqi Zhang, Dongxin Ye, Hao Lyu, Hao Lin. iPro-MP: a BERT-based model for the prediction of multiple prokaryotic promoters
 
