@@ -1,5 +1,6 @@
 # iPro-MP
 **a BERT-based model for the prediction of multiple prokaryotic promoters**
+<img width="5914" height="4701" alt="Figure1-流程图第2版" src="https://github.com/user-attachments/assets/7d37447c-984c-46d8-8bbd-61cb0f80c03b" />
 
 
 
